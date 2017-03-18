@@ -1,0 +1,70 @@
+﻿.content-wrapper { position: relative; max-width: 960px; margin: 0 auto; }
+.hidden { display: none; }
+a { color: #333; }
+body { margin: 0; padding: 0; font-size: .8rem; font-family: Consolas,'Microsoft YaHei'; cursor: default; }
+    body > header { height: 2.5rem; line-height: 2.5rem; background-color: #333; color: #ccc; text-align: right; white-space: nowrap; overflow: hidden; }
+        body > header ul { display: block; float: right; margin: 0; padding: 0; list-style: none; }
+            body > header ul li { display: inline-block; margin-left: 1rem; }
+                body > header ul li a { color: #ccc; text-decoration: none; }
+        body > header a:hover { color: #fff; }
+    body > main { margin: 1rem 0 0 0; overflow: hidden; }
+        body > main .profile { min-height: 100px; }
+            body > main .profile .avatar { position: absolute; width: 6.25rem; height: 6.25rem; border-radius: 50%; background-size: contain; }
+            body > main .profile .title { padding: 0 0 0 7.5rem; }
+                body > main .profile .title h2 { margin: 0; padding: .5rem 0 0 0; }
+                    body > main .profile .title h2 span { display: inline-block; }
+                body > main .profile .title p { margin: .25rem 0 0 0; }
+                body > main .profile .title ul { margin: .25rem 0 0 0; padding: 0; list-style: none; font-size: .75rem; }
+                    body > main .profile .title ul li { display: inline-block; margin: 0 0 1px 0; padding: .0625rem .25rem; border-radius: .25rem; background-color: #999; color: #fff; cursor: default; }
+                        body > main .profile .title ul li:hover { color: #fff; }
+                    body > main .profile .title ul .r { background-color: #f99; }
+                    body > main .profile .title ul .g { background-color: #9f9; }
+                    body > main .profile .title ul .b { background-color: #99f; }
+        body > main .donate { margin: 1.25rem 0 0 0; text-align: center; overflow: hidden; }
+            body > main .donate > header { display: inline-block; height: 7.5rem; white-space: nowrap; overflow: hidden; }
+                body > main .donate > header b { color: #f00; font: 1rem normal; }
+            body > main .donate > table { display: inline-block; border-collapse: collapse; }
+                body > main .donate > table td { padding: 0 .875rem; }
+                    body > main .donate > table td > div { width: 7.5rem; height: 7.5rem; border: 1px solid #ccc; background-repeat: no-repeat; background-position: center center; }
+        body > main .project { margin: 1.25rem 0 0 0; overflow: hidden; }
+            body > main .project > div { padding: 1.25rem; border-radius: .5rem; }
+                body > main .project > div + div { margin: 1.25rem 0 0 0; }
+                body > main .project > div h2 { margin: 0; padding-left: 3.125rem; height: 2.5rem; line-height: 2.5rem; font-weight: bold; background-position: left center; background-repeat: no-repeat; }
+                body > main .project > div p { text-indent: 2em; }
+                body > main .project > div ul li { line-height: 1.25rem; }
+                    body > main .project > div ul li a { display: inline-block; height: 1.25rem; color: #666; text-decoration: none; }
+                        body > main .project > div ul li a:hover { color: #000; }
+                    body > main .project > div ul li img { vertical-align: text-bottom; }
+            body > main .project > #Jsonql { background-color: rgba(255, 106, 0, 0.50); }
+            body > main .project > #ApiExplorer { background-color: rgba(0, 148, 255, 0.50); }
+            body > main .project > #Components { background-color: rgba(0, 255, 144, 0.50); }
+    body > footer { margin: 1rem 0 0 0; line-height: 1.25rem; overflow: hidden; }
+        body > footer ul { margin: 0; padding: 1.25rem 0 0 0; list-style: none; border-top: 1px solid #ccc; }
+            body > footer ul li { display: inline-block; margin: 0 .625rem; }
+        body > footer a { color: #666; text-decoration: none; }
+            body > footer a:hover { color: #000; }
+        body > footer p { text-align: center; }
+
+@media screen and (max-width:1024px) {
+    .content-wrapper { margin: 0 1.25rem; }
+}
+
+@media screen and (max-width:768px) {
+    .content-wrapper { margin: 0 1rem; }
+}
+
+@media screen and (max-width:640px) {
+    .content-wrapper { margin: 0 .625rem; }
+    body > header { height: 5rem; }
+        body > header span { float: none; }
+    body > main .donate > table td { padding: 0 1.5rem; }
+}
+
+@media screen and (max-width:375px) {
+    .content-wrapper { margin: 0 .625rem; }
+    body > main .donate > table td { padding: 0 1.25rem; }
+}
+
+@media screen and (max-width:320px) {
+    body > main .donate > table td { padding: 0 .875rem; }
+}
