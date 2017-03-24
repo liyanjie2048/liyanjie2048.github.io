@@ -1,0 +1,96 @@
+﻿.content-wrapper { position: relative; max-width: 960px; margin: 0 auto; }
+.hidden { display: none; }
+a { color: #333; }
+body { margin: 0; padding: 0; font-size: .8rem; font-family: Consolas,'Microsoft YaHei'; cursor: default;
+    > header { height: 2.5rem; line-height: 2.5rem; background-color: #333; color: #ccc; text-align: right; white-space: nowrap; overflow: hidden;
+        ul { display: inline-block; margin: 0; padding: 0; list-style: none;
+            > li { display: inline-block; margin-left: 1rem;
+                a { color: #ccc; text-decoration: none;
+                    &:hover { color: #fff; }
+                }
+            }
+        }
+    }
+    > main { margin: 1rem 0 0 0; overflow: hidden;
+        .profile { min-height: 100px;
+            .avatar { position: absolute; width: 6.25rem; height: 6.25rem; border-radius: 50%; background-size: contain; }
+            .title { padding: 0 0 0 7.5rem;
+                h2 { margin: 0; padding: .5rem 0 0 0;
+                    span { display: inline-block; }
+                }
+                p { margin: .25rem 0 0 0; }
+                ul { margin: .25rem 0 0 0; padding: 0; list-style: none; font-size: .75rem;
+                    > li { display: inline-block; margin: 0 0 1px 0; padding: .0625rem .25rem; border-radius: .25rem; background-color: #999; color: #fff; cursor: default;
+                        &:hover { color: #fff; }
+                        &.r { background-color: #f99; }
+                        &.g { background-color: #9f9; }
+                        &.b { background-color: #99f; }
+                    }
+                }
+            }
+        }
+        .donate { margin: 1.25rem 0 0 0; text-align: center; overflow: hidden;
+            > header { display: inline-block; height: 7.5rem; white-space: nowrap; overflow: hidden;
+                b { color: #f00; font: 1rem normal; }
+            }
+            > table { display: inline-block; border-collapse: collapse;
+                td { padding: 0 .875rem;
+                    > div { width: 7.5rem; height: 7.5rem; border: 1px solid #ccc; background-repeat: no-repeat; background-position: center center; }
+                }
+            }
+        }
+        .project { margin: 1.25rem 0 0 0; overflow: hidden;
+            > div { padding: 1.25rem; border-radius: .5rem;
+                + div { margin: 1.25rem 0 0 0; }
+                h2 { margin: 0; padding-left: 3.125rem; height: 2.5rem; line-height: 2.5rem; font-weight: bold; background-position: left center; background-repeat: no-repeat;
+                    img { vertical-align: middle; }
+                }
+                p { text-indent: 2em; }
+                ul > li { line-height: 1.25rem;
+                    a { display: inline-block; height: 1.25rem; color: #666; text-decoration: none;
+                        &:hover { color: #000; }
+                    }
+                    img { vertical-align: text-bottom; }
+                }
+                &#Jsonql { background-color: rgba(255, 106, 0, 0.50); }
+                &#ApiExplorer { background-color: rgba(0, 148, 255, 0.50); }
+                &#Components { background-color: rgba(0, 255, 144, 0.50); }
+            }
+        }
+    }
+    > footer { margin: 1rem 0 0 0; line-height: 1.25rem; overflow: hidden;
+        ul { margin: 0; padding: 1.25rem 0 0 0; list-style: none; border-top: 1px solid #ccc;
+            > li { display: inline-block; margin: 0 .625rem; }
+        }
+        a { color: #666; text-decoration: none;
+            &:hover { color: #000; }
+        }
+        p { text-align: center; }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .content-wrapper { margin: 0 1.25rem; }
+}
+
+@media screen and (max-width:768px) {
+    .content-wrapper { margin: 0 1rem; }
+}
+
+@media screen and (max-width:640px) {
+    .content-wrapper { margin: 0 .625rem; }
+    body {
+        > header { height: 5rem;
+            ul { display: block; }
+        }
+        > main .donate > table td { padding: 0 1.5rem; }
+    }
+}
+
+@media screen and (max-width:375px) {
+    body > main .donate > table td { padding: 0 1.25rem; }
+}
+
+@media screen and (max-width:320px) {
+    body > main .donate > table td { padding: 0 .875rem; }
+}
