@@ -24,7 +24,7 @@ body {
     white-space: nowrap;
     overflow: hidden; }
     body > header ul {
-      display: inline-block;
+      float: right;
       margin: 0;
       padding: 0;
       list-style: none; }
@@ -109,12 +109,11 @@ body {
         body > main .project > div + div {
           margin: 1.25rem 0 0 0; }
         body > main .project > div h2 {
+          height: 2.875rem;
           margin: 0;
           padding-left: 3.125rem;
-          height: 2.5rem;
-          line-height: 2.5rem;
           font-weight: bold;
-          background-position: left center;
+          background-position: left top;
           background-repeat: no-repeat; }
           body > main .project > div h2 img {
             vertical-align: middle; }
@@ -171,7 +170,7 @@ body {
   body > header {
     height: 5rem; }
     body > header ul {
-      display: block; }
+      float: none; }
   body > main .donate > table td {
     padding: 0 1.5rem; } }
 
