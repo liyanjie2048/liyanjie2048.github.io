@@ -9,9 +9,7 @@ body { margin: 0; padding: 0; font-size: .8rem; font-family: Consolas,'Microsoft
                     &:hover { color: #fff; }
                 }
                 &.ico { margin-left: .25rem;
-                    a { display: block; width: 1.25rem; height: 1.25rem; border-radius: 50%; color: #ccc; text-decoration: none; overflow: hidden; box-shadow: #fff 0 0 2px;
-                        img { width: 1.25rem; height: 1.25rem; background-color: #fff; }
-                    }
+                    a { display: block; width: 1.25rem; height: 1.25rem; border-radius: 50%; color: #ccc; text-decoration: none; overflow: hidden; box-shadow: #fff 0 0 2px; background-color: #fff; background-size: 1.25rem 1.25rem; }
                 }
             }
         }
@@ -67,9 +65,7 @@ body { margin: 0; padding: 0; font-size: .8rem; font-family: Consolas,'Microsoft
         ul { margin: 0; padding: 1.25rem 0 0 0; list-style: none; border-top: 1px solid #ccc;
             > li { display: inline-block; margin: 0 .625rem;
                 &.ico {
-                    a { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 50%; overflow: hidden;
-                        img { width: 1.25rem; height: 1.25rem; vertical-align: middle; background-color: #fff; }
-                    }
+                    a { display: inline-block; width: 1.25rem; height: 1.25rem; border-radius: 50%; overflow: hidden; background-color: #fff; background-size: 1.25rem 1.25rem; }
                 }
             }
         }
